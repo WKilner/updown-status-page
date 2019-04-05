@@ -1,0 +1,165 @@
+progress {
+    width: 1.5em;
+}
+
+
+.uptime-summary .tags .tag {
+    opacity: 1;
+}
+
+.uptime-summary .tags.uptime {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+
+.uptime-summary .last-and-next-checks .tag.hv .v {
+    white-space: initial;
+}
+
+.uptime-summary .last-and-next-checks .tag.hv .v time {
+    white-space: nowrap;
+}
+
+
+#summary .uptime-summary .tags.uptime {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+#summary .tab-groups {
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+#summary .tab-groups .tabs {
+    justify-content: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#summary .tab-groups .tabs [data-tier="2"] {
+    opacity: 1; /* I would normally reduce this to 0.6, but I don't like the resulting aesthetics. */
+}
+
+#summary .tab-groups .tabs > h1 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#summary .tab-groups .tabs > ul {
+    justify-content: center;
+    background: transparent;
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#summary .tab-groups .tabs > ul > li {
+    flex: none;
+    width: 4.75rem;
+    border: medium solid black;
+    margin: 0.15em;
+    white-space: nowrap;
+}
+
+#summary .tab-groups .tabs > ul > li > a {
+    padding: 0.2rem 0.4rem;
+    color: black;
+}
+
+#summary .tab-groups .tabs > ul > li:hover {
+    border-color: blue;
+}
+
+
+#summary .tab-groups .tabs > ul > li.up > a {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+#summary .tab-groups .tabs > ul > li.down > a {
+    background-color: red;
+}
+
+
+/* Magically align hexstream.xyz with hexstreamsoft.com. */
+@media (min-width: 74.75em) {
+    #summary #summary_hexstream\.xyz {
+        position: relative;
+        left: -0.3em;
+    }
+}
+
+
+main table tr[data-tier="2"] {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+main table tr[data-tier="2"] a {
+    opacity: 0.6;
+}
+
+
+main table .current-status {
+    text-align: center;
+    font-weight: bold;
+    width: 4.75rem;
+}
+
+#recent-checks .current-status {
+    width: initial;
+}
+
+main table .uptime {
+    text-align: center;
+}
+
+main table tr.up .current-status {
+    color: forestgreen;
+}
+
+main table tr.down .current-status {
+    background-color: red;
+}
+
+main table tr[data-tier="2"].up .current-status {
+    color: rgba(34, 139, 34, 0.6); /* forestgreen */
+}
+
+main table tr[data-tier="2"].down .current-status {
+    background-color: rgba(255, 0, 0, 0.6); /* red */
+}
+
+
+main table thead .uptime {
+    font-size: smaller;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1em;
+}
+
+main table .interval {
+    text-align: center;
+}
+
+main table > thead > tr:last-child > th {
+    vertical-align: middle;
+}
+
+#details caption {
+    margin-bottom: 0.25em;
+}
+
+#details #recent-and-upcoming-checks > .compact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+
+#about-updown\.io p {
+    text-align: center;
+}
